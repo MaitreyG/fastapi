@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v2
-      - name: say hi to maitrey
-        run: echo "hello maitrey"
+      - name: Install python
+        uses: action/setup-python@v2
+        with:
+          python-version: "3.12.3"
   
